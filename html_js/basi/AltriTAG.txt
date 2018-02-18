@@ -1,0 +1,93 @@
+TAG SPECIALI
+--------------------
+<head>: testata della pagina html(contiene informazioni solo peril browser) 
+e va inserito PRIMA del tag <body>
+<title>: tag per il titolo della pagina che verrà visualizzato sulla barra DEL BROWSER 
+e va inserito SEMPRE nel tag <head>
+
+Come si usano <head> e <title>
+
+<html>
+	<head>
+		<title>Questa &egrave; la mia prima pagina web</title>
+	</head>
+	<body>
+		Qui c'&egrave; il contenuto della mia pagina web...
+	</body>
+</html>
+
+
+TITOLI o Testi evidenziati
+---------------
+<h1>: titolo molto molto grande (potrebbe essere il titolo della pagina) 
+<h2>: titolo molto grande (potrebbe essere il titolo di un capitolo)
+<h3>: titolo grande (potrebbe essere il titolo di un paragrafo) 
+<h4>: titolo (potrebbe essere il titolo di una sezione o un sottopraragrafo)
+
+Come si usano i tag per i TITOLI:
+
+<h1>Questo &egrave; il mio titolo molto molto grande</h1>
+<h2>Questo &egrave; il mio titolo molto grande</h2>
+<h3>Questo &egrave; il mio titolo grande</h3>
+<h4>Questo &egrave; il mio titolo</h4>
+
+
+RIGA SEPARATRICE ORIZZONTALE
+-------------------------------
+<hr/>
+
+Come si usa la riga separatrice: semplicemente
+inserendo il suo tag SINGOLO nel codice nel punto
+della pagina in cui si vuole che appaia una riga lunga 
+orizzontale
+
+<p>Questo &egrave; il testo PRIMA della riga orizzontale</p>
+<hr/>
+<p>Questo &egrave; il testo DOPO della riga orizzontale</p>
+
+
+TABELLE
+-------------
+<table>: tabella
+<tr>: riga nella tabella
+<td>: cella nella riga nella tabella
+
+
+Come si usano i tag della tabella: il tag <table> contiene il tag riga <tr>
+che a sua volta contiene i tag <td> delle celle 
+
+esempio tabella senza bordo:
+-----------------------------
+<table>
+<tr>
+	<td>prima cella della prima riga</td><td>seconda cella della prima riga</td><td>terza cella della prima riga</td>
+</tr>
+<tr>
+	<td>prima cella della seconda riga</td><td>seconda cella della seconda riga</td><td>terza cella della seconda riga</td>
+</tr>
+</table>
+
+
+esempio tabella con bordo
+---------------------------
+<table border="1">
+<tr>
+	<td>prima cella della prima riga</td><td>seconda cella della prima riga</td><td>terza cella della prima riga</td>
+</tr>
+<tr>
+	<td>prima cella della seconda riga</td><td>seconda cella della seconda riga</td><td>terza cella della seconda riga</td>
+</tr>
+</table>
+
+
+esempio tabella con stile...
+-----------------------------
+<table style="border: 2px solid blue; padding:5px; ">
+<tr >
+	<td style="background-color:white;border: 1px dotted blue;">prima cella della prima riga</td><td>seconda cella della prima riga</td><td>terza cella della prima riga</td>
+</tr>
+<tr>
+	<td>prima cella della seconda riga</td><td>seconda cella della seconda riga</td><td>terza cella della seconda riga</td>
+</tr>
+</table>
+
