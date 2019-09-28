@@ -14,17 +14,17 @@ terra. Nel tutorial ci si limita a far scendere i due numeri senza particolari e
 ## Descrizione del gioco
 Due bolle appaiono in cima allo schermo (sul lato sinistro) con due numeri dentro. Cominciano
 a cadere. Ci sono due aree rettangolari sul lato destro dello schermo. In quella inferiore il
-giocatore deve digitare la somma dei due numeri. La riposta dell'utente appare sotto alla frase che
-chiede la somma. Quando il giocatore preme Invio/Return una scritta nella casella di testo superiore indica se
-la risposta è esatta, ripetendo la risposta esatta propio sotto opuure, se è sbagliata, dando la risposta esatta sotto.
-C'è un contatore per le risposte esatte e per il numero totale di risposte date dal giocatore fino alal fine del gioco.
+giocatore deve digitare la somma dei due numeri. La risposta dell'utente appare sotto alla frase che
+chiede la somma. Quando il giocatore preme `Invio`/`Return` una scritta nella casella di testo superiore indica se
+la risposta è esatta, ripetendo la risposta esatta propio sotto oppure, se è sbagliata, dando la risposta esatta sotto.
+C'è un contatore per le risposte esatte e per il numero totale di risposte date dal giocatore fino alla fine del gioco.
 Dopo ciascuna risposta delle nuove bolle appariranno sullo schermo con due nuovi numeri. Il gioco termina quando il
 giocatore non riesce a dare una risposta e le bolle arrivano in fondo allo schermo. Allora, nell'area rettangolare
 inferiore, appare una scritta che dice che il gioco è terminato e dà il numero di risposte esatte e il numero totale
 di tentativi nel gioco.
 
-Devi scrivere il gioco in maniera iterativa, cioè prima devi creare e inizializzare le variabili di base, scrivere la funzione `setup`
-per creare lo schermo, e la funzione `draw` che implementa l'animazione. Dopo 
+Devi scrivere il gioco in maniera iterativa, cioè prima devi creare e inizializzare le variabili di base, scrivere la 
+funzione `setup` per creare lo schermo, e la funzione `draw` che implementa l'animazione. Dopo 
 cambia il codice dove necessario, aggiungi ancora una o due funzioni per non ripetere il codice e ottieni il
 gioco finale. Prima prova a scrivere il codice da solo, senza guardare il codice di esempio qui sotto!
 
@@ -234,8 +234,10 @@ void myTextBox() { // to communicate with the user
 # Suggestions for improvements
 
 * Add an explosion effect to the bubbles when they reach the bottom of the screen
-* Add a timer to the game and put a timeout. The game ends either when the timeout is reached or when the bubbles reach the end of the screen.
-* Add a new level when a certain count of correct answers is reached. In this new level you can add a new bubble that carries a random arithmetic operator `+` or `-` which will be the operation to do between the
+* Add a timer to the game and put a timeout. The game ends either when the timeout is reached or when the bubbles 
+reach the end of the screen.
+* Add a new level when a certain count of correct answers is reached. In this new level you can add a new bubble 
+that carries a random arithmetic operator `+` or `-` which will be the operation to do between the
 two numbers. Or you can have a third number in the new bubble and do the sum of three numbers instead.
 * Any other improvements you can think of??
 * Any graphical/animation improvements?
