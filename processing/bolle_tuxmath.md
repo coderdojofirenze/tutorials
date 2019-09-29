@@ -16,7 +16,7 @@ Due bolle appaiono in cima allo schermo (sul lato sinistro) con due numeri dentr
 a cadere. Ci sono due aree rettangolari sul lato destro dello schermo. In quella inferiore il
 giocatore deve digitare la somma dei due numeri. La risposta dell'utente appare sotto alla frase che
 chiede la somma. Quando il giocatore preme `Invio`/`Return` una scritta nella casella di testo superiore indica se
-la risposta è esatta, ripetendo la risposta esatta propio sotto oppure, se è sbagliata, dando la risposta esatta sotto.
+la risposta è esatta, ripetendo la risposta esatta proprio sotto oppure, se è sbagliata, dando la risposta esatta sotto.
 C'è un contatore per le risposte esatte e per il numero totale di risposte date dal giocatore fino alla fine del gioco.
 Dopo ciascuna risposta delle nuove bolle appariranno sullo schermo con due nuovi numeri. Il gioco termina quando il
 giocatore non riesce a dare una risposta e le bolle arrivano in fondo allo schermo. Allora, nell'area rettangolare
@@ -69,7 +69,7 @@ String solution = "";   // usata per memorizzare l'input del giocatore - la somm
 int numSolution;        // versione integer dell'input del giocatore
 
 int state = 0;       // stato del gioco:
-                     // 0: un nuovo insieme di numeri appsre nelle bolle
+                     // 0: un nuovo insieme di numeri appare nelle bolle
                      // 1: il giocatore ha fornito una risposta esatta
                      // 2: il giocatore ha fornito una risposta esatta
                      // 3: le bolle hanno raggiunto il fondo dello schermo senza una risposta dal giocatore
@@ -142,11 +142,11 @@ Scrivi una funzione che:
 
 * controlla se il tasto premuto è `Invio` o `Return` (significa che ha finito di scrivere la risposta)
 + se *sì*, allora dobbiamo controllare se la risposta è esatta.
-- se *sì*, allora dobbiamo emettere un messaggio che dice cha la risposta è esatta, fare un po' di conti (aggiornare il numero di risposte esatte e di tentativi totali), e ricominciare il gioco con numeri nuovi
-- se *no*, allora dobbiamo emettere un messaggio che dice cha la risposta è errata, dare la risposta esatta, fare un po' di conti (aggiornare il numero di tentativi totali), e ricominciare il gioco con numeri nuovi
+    - se *sì*, allora dobbiamo emettere un messaggio che dice cha la risposta è esatta, fare un po' di conti (aggiornare il numero di risposte esatte e di tentativi totali), e ricominciare il gioco con numeri nuovi
+    - se *no*, allora dobbiamo emettere un messaggio che dice cha la risposta è errata, dare la risposta esatta, fare un po' di conti (aggiornare il numero di tentativi totali), e ricominciare il gioco con numeri nuovi
 + se *no* (e il tasto premuto è numerico), aggiungiamo il nuovo carattere corrispondente al tasto alla stringa degli altri tasti premuti prima.
 
-*NB:* ricordati che la somma dei due numeri è un intero però i tasti premuti sono caratteri. Fai la conversione di tipo necessaria per essere in grado di confrontare la risposta data con la vera somma dei due numeri.
+*NB:* ricordati che la somma dei due numeri è un `integer` però i tasti premuti sono caratteri. Fai la conversione di tipo necessaria per essere in grado di confrontare la risposta data con la vera somma dei due numeri.
 
 ```{java}
 void keyPressed()
