@@ -65,18 +65,22 @@ int realSum = num1 + num2;
 int count = 0;   // conteggio delle risposte esatte
 int total = 0;   // totale delle addizioni nel gioco
 
-String solution = "";   // usata per memorizzare l'input del giocatore - la somma dei due numeri - come tipo String
+String solution = "";   // usata per memorizzare l'input del giocatore - la somma 
+                        // dei due numeri - come tipo String
 int numSolution;        // versione integer dell'input del giocatore
 
 int state = 0;       // stato del gioco:
                      // 0: un nuovo insieme di numeri appare nelle bolle
                      // 1: il giocatore ha fornito una risposta esatta
                      // 2: il giocatore ha fornito una risposta esatta
-                     // 3: le bolle hanno raggiunto il fondo dello schermo senza una risposta dal giocatore
+                     // 3: le bolle hanno raggiunto il fondo dello schermo senza 
+                     // una risposta dal giocatore
 
 String message1 = "", message2 = "";   // messaggi da mostrare al giocatore
-                                       // message1: quando state = 0 oppure 1, appare nella casella di testo inferiore
-                                       // message2: quando state = 2 oppure 3, appare nella casella di testo superiore
+                                       // message1: quando state = 0 oppure 1, 
+                                       // appare nella casella di testo inferiore
+                                       // message2: quando state = 2 oppure 3, 
+                                       // appare nella casella di testo superiore
 
 ```
 ## La funzione `setup`
@@ -101,7 +105,7 @@ void setup(){
 void draw(){  
   background(200);    // grigio
   
-  if (state == 1 || state == 2) {   // il giocatore ha dato una risposta giusta o sbagliata
+  if (state == 1 || state == 2) { // il giocatore ha dato una risposta giusta o sbagliata
     delay(2000);
     state = 0;
   }
@@ -151,9 +155,11 @@ Scrivi una funzione che:
 ```{java}
 void keyPressed()
 {
-  if (key == RETURN || key == ENTER) {  // l'input del giocatore è finito; controlla se il risultato è esatto
+  if (key == RETURN || key == ENTER) {  // l'input del giocatore è finito; controlla se il 
+                                        // risultato è esatto
     numSolution = int(solution);        // ottieni il valore integer dell'input del giocatore
-    total++;                            // incrementa di 1 il numero di risposte totali date dal giocatore
+    total++;                            // incrementa di 1 il numero di risposte totali date 
+                                        // dal giocatore
     if (numSolution == realSum) { // risposta esatta
       state = 1;
       count++;                    // incrementa di 1 il numero di risposte esatte
